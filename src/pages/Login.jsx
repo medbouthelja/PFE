@@ -79,8 +79,17 @@ const Login = () => {
             </button>
           </form>
 
-          <div className="mt-6 text-center text-sm text-gray-600">
-            <p>Demo: admin@example.com / password</p>
+          <div className="mt-6 text-center text-sm text-gray-500 space-y-2">
+            <p>
+              Compte API (fixtures) : <span className="text-gray-700">admin@example.com</span> /{' '}
+              <span className="text-gray-700">password</span>
+            </p>
+            <p className="text-xs max-w-sm mx-auto">
+              Sans backend Symfony sur le port 8000, la connexion échoue. Lancez l’API depuis le dossier{' '}
+              <code className="bg-gray-100 px-1 rounded">backend</code> ou activez{' '}
+              <code className="bg-gray-100 px-1 rounded">VITE_DEMO_MODE=true</code> dans <code className="bg-gray-100 px-1 rounded">.env</code>{' '}
+              pour un login local sans serveur.
+            </p>
           </div>
         </div>
       </div>
